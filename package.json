@@ -1,0 +1,43 @@
+{
+  "name": "@istanbul/test",
+  "version": "0.0.1",
+  "description": "Test package of istanbul framework",
+  "homepage": "https://github.com/istanbulnode/test#readme",
+  "keywords": [
+    "typescript",
+    "istanbul",
+    "test",
+    "istanbuljs"
+  ],
+  "author": "Sami Salih İBRAHİMBAŞ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istanbulnode/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/istanbulnode/test/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "node --no-warnings --test",
+    "clear": "del-cli ./dist/*",
+    "build": "npm run clear && tsc",
+    "production": "npm run build && npm run test"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@istanbul/app": "^0.0.29"
+  }
+}
