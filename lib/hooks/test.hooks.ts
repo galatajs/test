@@ -5,6 +5,7 @@ let testModules: Map<string, Module> = new Map();
 
 export const createTestApp: TestAppCreator = (): CorePlugin => {
   return {
+    loadLast: true,
     name: "test",
     version: "0.0.1",
     install(app, corePlugins, modules: Map<string, Module>) {

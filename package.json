@@ -1,6 +1,6 @@
 {
   "name": "@istanbul/test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Test package of istanbul framework",
   "homepage": "https://github.com/istanbulnode/test#readme",
   "keywords": [
@@ -38,6 +38,6 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@istanbul/app": "^0.0.29"
+    "@istanbul/app": "^0.0.30"
   }
 }
