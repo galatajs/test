@@ -14,7 +14,7 @@ export const createTestApp: TestAppCreator = (): CorePlugin => {
   };
 };
 
-export const getModule: ModuleGetter = (name: string): TestModule | null => {
+export const getModule: ModuleGetter = (name: string): TestModule => {
   const module = testModules.get(name);
   return {
     getProvider<T>(name: string): T | null {
@@ -22,6 +22,11 @@ export const getModule: ModuleGetter = (name: string): TestModule | null => {
       const provider = module.providers[name];
       if (!!provider) return provider;
       return null;
+    },
+    getRequiredProvider<T>(name: string): T {
+      const provider = this.getProvider<T>(name);
+      if (provider === null) throw new Error(`Provider ${name} not found`);
+      return provider;
     },
   };
 };
