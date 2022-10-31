@@ -1,4 +1,4 @@
-import { CorePlugin } from "@istanbul/app";
+import { CorePlugin } from "@galatajs/app";
 
 export interface TestModule {
   getProvider<T>(name: string): T | null;

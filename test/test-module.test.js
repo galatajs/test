@@ -1,6 +1,6 @@
 const assert = require("node:assert");
 const test = require("node:test");
-const { createApp, createModule } = require("@istanbul/app");
+const { createApp, createModule } = require("@galatajs/app");
 const { createTestApp, getModule } = require("../dist");
 
 const mainModule = createModule("main", {

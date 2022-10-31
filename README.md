@@ -3,31 +3,31 @@
 <br>
 <img src="https://avatars.githubusercontent.com/u/108695351?s=200&v=4" width="128" height="128">
 </p>
-<h3 align="center">@istanbul/test</h3>
+<h3 align="center">@galatajs/test</h3>
 <p align="center">
-  Test package of <code>istanbul</code> framework. 
+  Test package of <code>galatajs</code> framework. 
 </p>
 
 ### What Is It?
 
-Test module for IstanbulJS. This package has been developed to facilitate testing of modules when using module-based architecture. It is not a testing framework. If that's what you came for, `jest` or `mocha` is recommended.
+Test module for galatajsJS. This package has been developed to facilitate testing of modules when using module-based architecture. It is not a testing framework. If that's what you came for, `jest` or `mocha` is recommended.
 
 ### Installation
 
 ```bash
-npm install --save-dev @istanbul/test
+npm install --save-dev @galatajs/test
 ```
 
 > or with yarn
 > ```bash
-> yarn add -D @istanbul/test
+> yarn add -D @galatajs/test
 > ```
 
 ### Example
 
 ```typescript
-import { createApp, createModule } from "@istanbul/app";
-import { createTestApp } from "@istanbul/test";
+import { createApp, createModule } from "@galatajs/app";
+import { createTestApp } from "@galatajs/test";
 
 class ProviderClass {
   greeting() : string {
@@ -71,4 +71,4 @@ afterAll(() => {
 })
 ```
 
-Note: IstanbulJS passes provider names through the `toCamelCase` function. So even though our provider is named `ProviderClass`, we called it `providerClass`.
+Note: galatajsJS passes provider names through the `toCamelCase` function. So even though our provider is named `ProviderClass`, we called it `providerClass`.

@@ -1,22 +1,20 @@
 {
-  "name": "@istanbul/test",
-  "version": "0.0.3",
-  "description": "Test package of istanbul framework",
-  "homepage": "https://github.com/istanbulnode/test#readme",
+  "name": "@galatajs/test",
+  "version": "0.1.1",
+  "description": "Test package of galatajs framework",
+  "homepage": "https://github.com/galatajs/test#readme",
   "keywords": [
     "typescript",
-    "istanbul",
-    "test",
-    "istanbuljs"
+    "test"
   ],
   "author": "Sami Salih İBRAHİMBAŞ",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/istanbulnode/test.git"
+    "url": "git+https://github.com/galatajs/test.git"
   },
   "bugs": {
-    "url": "https://github.com/istanbulnode/test/issues"
+    "url": "https://github.com/galatajs/test/issues"
   },
   "directories": {
     "lib": "lib",
@@ -38,6 +36,6 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@istanbul/app": "^0.0.30"
+    "@galatajs/app": "^0.1.1"
   }
 }
